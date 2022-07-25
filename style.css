@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-image: url(img/Background/mexico-hintergrund.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position-y: bottom;
+    overflow-y: hidden;
+}
+
+
+
+canvas {
+    background-color: black;
+    display: block;
+}
+
+.headline {
+    color: yellow;
+}
+
+.d-none {
+    display: none;
+}
+
+.HUD {
+    display: none;
+    justify-content: space-between;
+    width: 80vw;
+    margin-top: 10px;
+}
+
+.panel {
+    display: flex;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color: darkorange;
+    border: 1px #fdd961 solid;
+}
+
+.description {
+    display: flex;
+    width: 45rem;
+    justify-content: space-around;
+    color: yellow;
+}
+
+.startscreen {
+    z-index: 3;
+    width : 720px;
+    /*height: 480px;*/
+    object-fit: contain;
+    object-position: top;
+}
+
+.startscreen:hover {
+    cursor: pointer;
+}
+
+
+/* --------- Smartphones --------- */
+
+/* Skalliert das Bild auf die Bildschirm Größe*/
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 80%;
+    }
+}
+
+
+/* Für die Drehung bei Handys*/
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 80vh;
+    }
+}
+
+/* Für den Startscreen*/
+@media only screen and (max-width: 720px) {
+    .startscreen {
+        width: 100%;
+    }
+
+    .headline {
+        position: absolute;
+        top:0;
+        z-index: -1;
+    }
+
+    .HUD {
+        display: flex;
+    }
+    
+    .description {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    .startscreen {
+        height: 100vh;
+    }
+
+    .headline {
+        position: absolute;
+        top:0;
+        z-index: -1;
+    }
+    
+    .description {
+        display: none;
+    }
+}
+
+

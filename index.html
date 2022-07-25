@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="models/drawable-object.class.js"></script>
+    <script src="models/movable-object.class.js"></script>
+    <script src="models/character.class.js"></script>
+    <script src="models/chicken.class.js"></script>
+    <script src="models/cloud.class.js"></script>
+    <script src="models/coin.class.js"></script>
+    <script src="models/bottle.class.js"></script>
+    <script src="models/background-object.class.js"></script>
+    <script src="models/status-bar.class.js"></script>
+    <script src="models/world.class.js"></script>
+    <script src="models/keyboard.class.js"></script>
+    <script src="models/level.class.js"></script>
+    <script src="models/throwable-object.class.js"></script>
+    <script src="models/endboss.class.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="js/game.js"></script>
+    
+    <title>El Pollo Loco</title>
+
+    <link rel="icon" type="image/gif" href="img/favicon/sombrero.png">
+</head>
+<body >
+    
+    <h1 class="headline">El Pollo Loco</h1>
+
+    <div>
+        <img id="startScreen" class="startscreen" onclick="startGame()" src="img/9.Intro _ Outro Image/Start Screen/Opción2.png">
+    </div>
+
+    <canvas id="canvas" class="d-none" width="720" height="480"></canvas>
+
+
+    <div class="HUD">
+        <div class="panel">
+            <button id="btnLeft">
+                <img src="img/Buttons/left.png">
+            </button>
+
+            <button id="btnRight">
+                <img src="img/Buttons/right.png">
+            </button>
+        </div>
+
+        <div class="panel">
+            <button id="btnRestart">
+                <img src="img/Buttons/restart.png">
+            </button>
+        </div>
+
+        <div class="panel">
+            <button id="btnJump">
+                <img src="img/Buttons/up.png">
+            </button>
+
+            <button id="btnThrow">
+                <img src="img/Buttons/throw.png">
+            </button>
+        </div>
+    </div>
+
+    <div>
+       <div class="description">
+           <div>
+               <h3>Arrows Left/Right = Walk</h3>
+           </div>
+           <div>
+               <h3>Arrow Up = Jump</h3>
+           </div>
+           <div>
+               <h3>Spacebar = Throw Tabasco</h3>
+           </div>
+        </div>
+
+        <div class="description">
+            <div>
+                <h3>M = Background Music On/Off</h3>
+            </div>
+            <div>
+                <h3>R = Restart the Game</h3>
+            </div>
+       </div>
+    </div>
+    
+</body>
+</html>
