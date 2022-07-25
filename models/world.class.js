@@ -17,7 +17,7 @@ class World {
     throwableObjects = [];
     gameWon = false;
     gameLoose = false;
-    direction = true;  // neu 'right'
+    direction = true;  
 
     
 
@@ -100,7 +100,7 @@ class World {
                 setTimeout(() => {
                     let position = this.level.enemies.indexOf(enemy);
                     this.level.enemies.splice(position, 1);
-                }, 250);
+                }, 500);  //250
             }
             console.log('Enemy Life', enemy.energy);
         }
@@ -117,7 +117,7 @@ class World {
                 setTimeout(() => {
                     let position = this.level.enemies.indexOf(enemy);
                     this.level.enemies.splice(position, 1);
-                }, 250);
+                }, 500);  //250
             } 
             console.log('Boss Life', this.endboss.energy);
         }

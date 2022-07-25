@@ -161,12 +161,12 @@ class Character extends MovableObject {
     animate() {
         setInterval(() => {
           this.animateMovement();
-        }, 30);
+        }, 20); //30
 
 
         setInterval(() => {
             this.animateImages();
-        }, 120);
+        }, 80);  //120
 
     }
 
@@ -217,9 +217,6 @@ class Character extends MovableObject {
 
     isAboveGroundSettings() {
         this.playAnimation(this.IMAGES_JUMPING);
-        setTimeout(() => {  
-            this.loadImage('img/2.Secuencias_Personaje-Pepe-corrección/3.Secuencia_salto/J-31.png');
-        }, 1000);
     }
 
     keyboardLeftOrRightSettings() {

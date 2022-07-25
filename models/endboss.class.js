@@ -115,7 +115,7 @@ class Endboss extends MovableObject {
     animate() {
         setInterval(() => {
           this.animateMovement();
-        }, 30);
+        }, 30);  
 
 
         setInterval(() => {
@@ -125,7 +125,7 @@ class Endboss extends MovableObject {
     }
 
 
-     /* -------------------------------------------- Settings Endgegner ------------------------------- */
+    /* -------------------------------------------- Settings Endgegner ------------------------------- */
 
     isDeadSettings() {
         this.playAnimation(this.IMAGES_DEATH);
@@ -196,11 +196,7 @@ class Endboss extends MovableObject {
         }
     }
 
-     //wenn er angreift bis x 3100 laufen
-    // normal laufen bis 3400
-    //ende ist bei 3600
-    // alarm bei 3100
-    // angriff bei 3120
+     
 
     /* -------------------------------------------- Spiel Gewonnen ------------------------------------ */ 
     gameWonSettings() {
