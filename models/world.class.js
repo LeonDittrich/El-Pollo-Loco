@@ -231,16 +231,20 @@ class World {
         this.addObjectsToMap(this.level.backgroundObjects);
         this.addObjectsToMap(gameOverIMG);
         this.keyboard = false;
-        console.log('Game Over', this.gameLoose);
+        setTimeout (() => {
+            location.reload();
+        }, 2500);
     };
 
     gameWonScreen() {
         let gameWinnerIMG = [new BackgroundObject('img/9.Intro _ Outro Image/Winner_screen/winner.png', this.character.x - 100)];
         this.addObjectsToMap(this.level.backgroundObjects);
         this.addObjectsToMap(gameWinnerIMG);
-        this.keyboard = false;
-        //this.keyboard.R = true;
-        console.log('GameWone', this.gameWon);
+        this.keyboard.UP = false;
+        this.keyboard.LEFT = false;
+        this.keyboard.RIGHT = false;
+        this.character.bg_sound.volume = 0;
+        this.endboss.bossFight_sound.volume = 0;
     }
 
     restart() {

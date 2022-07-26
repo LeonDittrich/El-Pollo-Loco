@@ -210,9 +210,6 @@ class Character extends MovableObject {
     isHurtSettings() {
         this.playAnimation(this.IMAGES_HURT);    
         this.hit_sound.play();
-        setTimeout(() => {  
-            this.loadImage('img/2.Secuencias_Personaje-Pepe-corrección/3.Secuencia_salto/J-31.png');
-        }, 2000);
     }
 
     isAboveGroundSettings() {

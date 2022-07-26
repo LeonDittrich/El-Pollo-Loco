@@ -215,6 +215,7 @@ class Endboss extends MovableObject {
     muteSounds() {
         world.character.yawning_sound.volume = 0;
         world.character.snark_sound.volume = 0;
+        world.character.bg_sound.volume = 0;
     }
 
    
